@@ -8,90 +8,54 @@
 
 body {
   font-family: 'Poppins', sans-serif;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  align-items: center;
-  height: 100vh;
 }
 
-button {
-  cursor: pointer;
+textarea {
+  width: 300px;
+  height: 300px;
+  border: none;
+  outline: none;
+  height: 100%;
+  width: 100%;
+  padding: 10px;
 }
 
 .container {
   display: flex;
-  padding: 20px;
-  border-radius: 5px;
 }
 
-.buttons-c {
+.child1 {
+  width: 500px;
+  height: 80vh;
+  background-color: #eee;
+  margin: 0 20px;
+  border: 2px solid orange;
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
 
-.buttons-c button {
-  margin: 20px 10px;
-  padding: 10px 20px;
-  border: none;
-  outline: none;
-  border-radius: 5px;
-  background-color: blue;
-  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.1);
-  cursor: pointer;
-}
-
-.buttons-c button a {
-  color: white;
-  text-decoration: none;
-}
-
-.content-c {
-  background-color: orange;
-  color: white;
-  padding: 20px;
-  border-radius: 10px;
-  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
+.child2 {
   width: 500px;
-}
-
-.content-c input {
-  padding: 10px 15px;
-  width: 300px;
-  border: none;
-  outline: none;
+  height: 80vh;
   background-color: #eee;
-  margin-top: 10px;
-  display: block;
+  border: 2px solid orange;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-.content-c button {
-  background-color: blue;
-  color: white;
+.content.hidden {
+  display: none;
+  pointer-events: none;
+}
+
+.run {
   padding: 10px 20px;
+  color: #eee;
+  background-color: orange;
   border: none;
   outline: none;
-  margin: 10px 0 0;
-  box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.1);
-}
-
-.red {
-  color: red;
-  font-weight: bold;
-  margin-right: 5px;
-}
-
-.unorder-content.hidden {
-  display: none;
-  pointer-events: none;
-}
-
-.content-c.hidden {
-  display: none;
-  pointer-events: none;
-}
-
-.try a {
-  color: white;
-  text-decoration: none;
+  margin: 20px;
+  cursor: pointer;
 }

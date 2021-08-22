@@ -1,15 +1,6 @@
-const unorderedbtn = document.querySelector('.unordered-tag');
-const paragraphbtn = document.querySelector('.paragraph-tag');
+const child2El = document.querySelector('.content');
+const runEl = document.querySelector('.run');
 
-const unorderedContentEL = document.querySelector('.unorder-content');
-const paragraphContentEl = document.querySelector('.content-c');
-
-unorderedbtn.addEventListener('click', () => {
-  paragraphContentEl.classList.add('hidden');
-  unorderedContentEL.classList.remove('hidden');
-});
-
-paragraphbtn.addEventListener('click', () => {
-  paragraphContentEl.classList.remove('hidden');
-  unorderedContentEL.classList.add('hidden');
+runEl.addEventListener('click', () => {
+  child2El.classList.remove('hidden');
 });
